@@ -16,4 +16,4 @@
 
 | Notebook  | Descripción |
 | :---: | :---: |
-| [Operadores](operators.ipynb) | Aritméticos, Comparación |
+| [Operadores](operators.html) | Aritméticos, Comparación |
