@@ -16,4 +16,4 @@
 
 | Notebook  | Descripción |
 | :---: | :---: |
-| [Operadores](operators.html) | Aritméticos, Comparación |
+| [Operadores](jupyter/operators.html) | Aritméticos, Comparación |
