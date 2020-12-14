@@ -14259,7 +14259,11 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Operadores">Operadores<a class="anchor-link" href="#Operadores">&#182;</a></h1><h2 id="Operadores-aritm&#233;ticos">Operadores aritm&#233;ticos<a class="anchor-link" href="#Operadores-aritm&#233;ticos">&#182;</a></h2><table>
+<h1 id="Operadores">Operadores<a class="anchor-link" href="#Operadores">&#182;</a></h1><ul>
+<li><strong>Apuntes tomados por:</strong> Guiselle Tatiana Zambrano Penagos</li>
+<li><strong>Tutorial:</strong> <a href="https://www.tutorialspoint.com/ruby/ruby_operators.htm">TutorialsPoint-Basics-Operators</a></li>
+</ul>
+<h2 id="Operadores-aritm&#233;ticos">Operadores aritm&#233;ticos<a class="anchor-link" href="#Operadores-aritm&#233;ticos">&#182;</a></h2><table>
 <thead><tr>
 <th style="text-align:center">Operador</th>
 <th style="text-align:center">Descripción</th>
@@ -14285,7 +14289,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ruby"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">8</span>
@@ -14329,21 +14333,26 @@ a.anchor-link {
 
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Operadores-de-asignaci&#243;n">Operadores de asignaci&#243;n<a class="anchor-link" href="#Operadores-de-asignaci&#243;n">&#182;</a></h2>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ruby"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">y</span> <span class="o">=</span> <span class="mi">3</span>
+<div class=" highlight hl-ruby"><pre><span></span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span>
 <span class="nb">puts</span> <span class="n">x</span>
 <span class="nb">puts</span> <span class="n">x</span> <span class="o">*=</span> <span class="n">y</span>
 <span class="nb">puts</span> <span class="n">x</span> <span class="o">/=</span> <span class="n">y</span>
 <span class="nb">puts</span> <span class="n">x</span> <span class="o">-=</span> <span class="n">y</span>
 <span class="nb">puts</span> <span class="n">x</span> <span class="o">+=</span> <span class="n">y</span>
 <span class="nb">puts</span> <span class="n">x</span> <span class="o">**=</span> <span class="n">y</span>
-<span class="nb">puts</span> <span class="n">x</span> <span class="o">%=</span> <span class="n">y</span>
+<span class="nb">puts</span> <span class="n">x</span> <span class="sx">%= y</span>
+<span class="sx">puts x %=</span> <span class="n">y</span>
 </pre></div>
 
      </div>
@@ -14369,6 +14378,7 @@ a.anchor-link {
 -1
 2
 8
+2
 2
 </pre>
 </div>
@@ -14416,6 +14426,18 @@ a.anchor-link {
 <td style="text-align:center">x != y</td>
 <td style="text-align:center">Diferente a</td>
 </tr>
+<tr>
+<td style="text-align:center">x === y</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">x.eql?y</td>
+<td style="text-align:center">Retorna verdadero si los operadores tienen el mismo tipo e igual valor</td>
+</tr>
+<tr>
+<td style="text-align:center">equal</td>
+<td style="text-align:center"></td>
+</tr>
 </tbody>
 </table>
 
@@ -14423,11 +14445,10 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ruby"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
-<span class="n">y</span> <span class="o">=</span> <span class="mi">2</span>
+<div class=" highlight hl-ruby"><pre><span></span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span>
 <span class="nb">puts</span> <span class="s2">&quot;x es mayor a y&quot;</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span>
 <span class="nb">puts</span> <span class="s2">&quot;y es menor a x&quot;</span> <span class="k">if</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="n">x</span>
 </pre></div>
@@ -14462,12 +14483,10 @@ y es menor a x
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ruby"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">y</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">z</span> <span class="o">=</span> <span class="mi">3</span>
+<div class=" highlight hl-ruby"><pre><span></span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span>
 <span class="nb">puts</span> <span class="s2">&quot;x es igual a y&quot;</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="n">y</span>
 <span class="nb">puts</span> <span class="s2">&quot;x es mayor o igual a y&quot;</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="n">y</span>
 <span class="nb">puts</span> <span class="s2">&quot;x es menor o igual a z&quot;</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="n">z</span>
@@ -14503,12 +14522,10 @@ x es mayor o igual a y
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ruby"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">y</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">z</span> <span class="o">=</span> <span class="mi">3</span>
+<div class=" highlight hl-ruby"><pre><span></span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span>
 <span class="nb">puts</span> <span class="n">y</span> <span class="o">&lt;=&gt;</span> <span class="n">y</span>
 <span class="nb">puts</span> <span class="n">y</span> <span class="o">&lt;=&gt;</span> <span class="n">x</span>
 <span class="nb">puts</span> <span class="n">y</span> <span class="o">&lt;=&gt;</span> <span class="n">z</span>
@@ -14545,12 +14562,10 @@ x es mayor o igual a y
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ruby"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">y</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">z</span> <span class="o">=</span> <span class="mi">3</span>
+<div class=" highlight hl-ruby"><pre><span></span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span>
 <span class="nb">puts</span> <span class="s2">&quot;y es igual a y&quot;</span> <span class="k">if</span> <span class="p">(</span><span class="n">y</span> <span class="o">&lt;=&gt;</span> <span class="n">y</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
 <span class="nb">puts</span> <span class="s2">&quot;y es mayor a x&quot;</span> <span class="k">if</span> <span class="p">(</span><span class="n">y</span> <span class="o">&lt;=&gt;</span> <span class="n">x</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span>
 <span class="nb">puts</span> <span class="s2">&quot;y es menor a z&quot;</span> <span class="k">if</span> <span class="p">(</span><span class="n">y</span> <span class="o">&lt;=&gt;</span> <span class="n">z</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span>
@@ -14584,6 +14599,880 @@ y es menor a z
 
 </div>
 
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ruby"><pre><span></span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="o">.</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="o">.</span><span class="mi">0</span>
+<span class="nb">puts</span> <span class="n">x</span><span class="o">.</span><span class="n">eql?y</span>
+<span class="nb">puts</span> <span class="n">y</span><span class="o">.</span><span class="n">eql?z</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>false
+true
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Operadores-Bit-a-Bit">Operadores Bit a Bit<a class="anchor-link" href="#Operadores-Bit-a-Bit">&#182;</a></h2><table>
+<thead><tr>
+<th style="text-align:center">Operador</th>
+<th style="text-align:center">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&amp;</td>
+<td style="text-align:center">AND</td>
+</tr>
+<tr>
+<td style="text-align:center">|</td>
+<td style="text-align:center">OR</td>
+</tr>
+<tr>
+<td style="text-align:center">^</td>
+<td style="text-align:center">XOR</td>
+</tr>
+<tr>
+<td style="text-align:center">~</td>
+<td style="text-align:center">Complemento</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;&lt;</td>
+<td style="text-align:center">Desplazamiento de bits a la izquierda</td>
+</tr>
+<tr>
+<td style="text-align:center">&gt;&gt;</td>
+<td style="text-align:center">Desplazamiento de bits a la derecha</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ruby"><pre><span></span><span class="c1"># and</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mb">0b1101</span>  <span class="c1"># 13</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mb">0b0110</span>  <span class="c1"># 6</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">&amp;</span> <span class="n">b</span>  <span class="c1"># =&gt; 0100 = 4</span>
+<span class="nb">puts</span> <span class="n">c</span>
+<span class="nb">puts</span> <span class="n">c</span><span class="o">.</span><span class="n">to_s</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>4
+100
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ruby"><pre><span></span><span class="c1"># or</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mb">0b1101</span>  <span class="c1"># 13</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mb">0b0110</span>  <span class="c1"># 6</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">|</span> <span class="n">b</span>  <span class="c1"># =&gt; 1111 = 15</span>
+<span class="nb">puts</span> <span class="n">c</span>
+<span class="nb">puts</span> <span class="n">c</span><span class="o">.</span><span class="n">to_s</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>1111
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ruby"><pre><span></span><span class="c1"># xor</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mb">0b1101</span>  <span class="c1"># 13</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mb">0b0110</span>  <span class="c1"># 6</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">^</span> <span class="n">b</span>  <span class="c1"># =&gt; 1011 = 11</span>
+<span class="nb">puts</span> <span class="n">c</span>
+<span class="nb">puts</span> <span class="n">c</span><span class="o">.</span><span class="n">to_s</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>11
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ruby"><pre><span></span><span class="c1"># complement</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mb">0b1101</span>  <span class="c1"># 13</span>
+<span class="n">c</span> <span class="o">=</span> <span class="o">~</span><span class="n">a</span>
+<span class="nb">puts</span> <span class="n">c</span>
+<span class="nb">puts</span> <span class="n">c</span><span class="o">.</span><span class="n">to_s</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>-14
+-1110
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ruby"><pre><span></span><span class="c1"># complemento</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mb">0b1101</span>  <span class="c1"># 13</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span>  <span class="c1"># =&gt;  11010 = 26</span>
+<span class="nb">puts</span> <span class="n">c</span>
+<span class="nb">puts</span> <span class="n">c</span><span class="o">.</span><span class="n">to_s</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>26
+11010
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ruby"><pre><span></span><span class="c1"># complemento</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mb">0b1101</span>  <span class="c1"># 13</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span>  <span class="c1"># =&gt;  0110 = 6</span>
+<span class="nb">puts</span> <span class="n">c</span>
+<span class="nb">puts</span> <span class="n">c</span><span class="o">.</span><span class="n">to_s</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>6
+110
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Operadores-L&#243;gicos">Operadores L&#243;gicos<a class="anchor-link" href="#Operadores-L&#243;gicos">&#182;</a></h2><table>
+<thead><tr>
+<th style="text-align:center">Operador</th>
+<th style="text-align:center">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">and, &amp;&amp;</td>
+<td style="text-align:center">AND</td>
+</tr>
+<tr>
+<td style="text-align:center">or, ||</td>
+<td style="text-align:center">OR</td>
+</tr>
+<tr>
+<td style="text-align:center">not, !</td>
+<td style="text-align:center">NOT</td>
+</tr>
+</tbody>
+</table>
+<p>Los operadores <strong>&amp;&amp;</strong> y <strong>||</strong> son de corto circuito porque si no se cumple la condición de un termino, no se evalúa el resto de la operación. Estos retornan el operador que determinan el resultado.</p>
+<p>Los operadores <strong>&amp;&amp;</strong> y <strong>and</strong> funcionan igual, pero se diferencian en su precedencia. Lo mismo sucede con <strong>||</strong> y <strong>or</strong>.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ruby"><pre><span></span><span class="nb">puts</span> <span class="kp">true</span> <span class="o">&amp;&amp;</span> <span class="s2">&quot;hello 1&quot;</span>
+<span class="nb">puts</span> <span class="kp">false</span> <span class="o">&amp;&amp;</span> <span class="s2">&quot;hello 2&quot;</span>
+<span class="nb">puts</span> <span class="kp">true</span> <span class="o">&amp;&amp;</span> <span class="kp">true</span> <span class="o">&amp;&amp;</span> <span class="s2">&quot;hello 3&quot;</span>
+<span class="nb">puts</span> <span class="kp">true</span> <span class="o">&amp;&amp;</span> <span class="kp">false</span> <span class="o">&amp;&amp;</span> <span class="s2">&quot;hello 4&quot;</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>hello 1
+false
+hello 3
+false
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[51]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ruby"><pre><span></span><span class="nb">puts</span> <span class="kp">true</span> <span class="o">||</span> <span class="s2">&quot;hello 1&quot;</span>
+<span class="nb">puts</span> <span class="kp">false</span> <span class="o">||</span> <span class="s2">&quot;hello 2&quot;</span>
+<span class="nb">puts</span> <span class="kp">false</span> <span class="o">||</span> <span class="kp">false</span> <span class="o">||</span> <span class="s2">&quot;hello 2&quot;</span>
+<span class="nb">puts</span> <span class="kp">false</span> <span class="o">||</span> <span class="kp">true</span> <span class="o">||</span> <span class="s2">&quot;hello 3&quot;</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>true
+hello 2
+hello 2
+true
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[57]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ruby"><pre><span></span><span class="nb">puts</span> <span class="o">!</span><span class="kp">true</span>
+<span class="nb">puts</span> <span class="p">(</span><span class="ow">not</span> <span class="kp">true</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>false
+false
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Operador-ternario">Operador ternario<a class="anchor-link" href="#Operador-ternario">&#182;</a></h2><table>
+<thead><tr>
+<th style="text-align:center">Operador</th>
+<th style="text-align:center">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">?:</td>
+<td style="text-align:center">condition ? True value : Otherwise value</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[63]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ruby"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="nb">puts</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span><span class="p">)?</span> <span class="s2">&quot;x es menor a y&quot;</span> <span class="p">:</span> <span class="s2">&quot;x es mayor o igual a y&quot;</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>x es menor a y
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Operadores-de-rango">Operadores de rango<a class="anchor-link" href="#Operadores-de-rango">&#182;</a></h2><table>
+<thead><tr>
+<th style="text-align:center">Operador</th>
+<th style="text-align:center">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">x..y</td>
+<td style="text-align:center">crea un rango inclusivo de x a y</td>
+</tr>
+<tr>
+<td style="text-align:center">x...y</td>
+<td style="text-align:center">crea un rango exclusivo de x a (y-1)</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[74]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ruby"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="o">[*</span><span class="mi">1</span><span class="o">..</span><span class="mi">12</span><span class="o">]</span>
+<span class="nb">puts</span> <span class="n">a</span>
+
+<span class="nb">puts</span> <span class="p">(</span><span class="mi">1</span><span class="o">...</span><span class="mi">12</span><span class="p">)</span><span class="o">.</span><span class="n">to_a</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+1 2 3 4 5 6 7 8 9 10 11
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Operador-defined?">Operador defined?<a class="anchor-link" href="#Operador-defined?">&#182;</a></h2><p>Determina si la expresión está definida o no. Devuelve una cadena de descripción de la expresión, o nil si la expresión no está definida.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ruby"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">23</span>
+<span class="nb">puts</span> <span class="p">(</span><span class="n">defined?</span> <span class="n">x</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>local-variable
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ruby"><pre><span></span><span class="k">def</span> <span class="nf">functionHello</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Hello </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
+<span class="k">end</span>
+<span class="nb">puts</span> <span class="n">functionHello</span><span class="p">(</span><span class="s2">&quot;Tatiana&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Hello Tatiana
+
+
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ruby"><pre><span></span><span class="nb">puts</span> <span class="p">(</span><span class="n">defined?</span> <span class="n">functionHello</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>method
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Operadores-&quot;.&quot;-y-&quot;::&quot;">Operadores "." y "::"<a class="anchor-link" href="#Operadores-&quot;.&quot;-y-&quot;::&quot;">&#182;</a></h2><p>Se llama a un <strong>método</strong> de módulo anteponiendo su nombre con el nombre del módulo y un punto, y hace referencia a una <strong>constante</strong> usando el nombre del módulo y dos dos puntos.</p>
+<p>El :: es un operador unario que permite: acceder a constantes, métodos de instancia y métodos de clase definidos dentro de una clase o módulo desde cualquier lugar fuera de la clase o módulo.</p>
+<p>Recuerde que en Ruby, las clases y los métodos también pueden considerarse constantes.</p>
+<p>Solo necesita anteponer el :: Const_name con una expresión que devuelva la clase apropiada o el objeto de módulo.</p>
+<p>Si no se usa una expresión de prefijo, la clase de objeto principal se usa por defecto.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ruby"><pre><span></span><span class="no">MR_COUNT</span> <span class="o">=</span> <span class="mi">0</span>         <span class="c1"># constant defined on main Object class</span>
+<span class="k">module</span> <span class="nn">Foo</span>
+   <span class="no">MR_COUNT</span> <span class="o">=</span> <span class="mi">0</span>
+   <span class="o">::</span><span class="no">MR_COUNT</span> <span class="o">=</span> <span class="mi">1</span>    <span class="c1"># set global count to 1</span>
+   <span class="no">MR_COUNT</span> <span class="o">=</span> <span class="mi">2</span>      <span class="c1"># set local count to 2</span>
+<span class="k">end</span>
+<span class="nb">puts</span> <span class="no">MR_COUNT</span>        <span class="c1"># this is the global constant</span>
+<span class="nb">puts</span> <span class="no">Foo</span><span class="o">::</span><span class="no">MR_COUNT</span>   <span class="c1"># this is the local &quot;Foo&quot; constant</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>&lt;main&gt;:3: warning: already initialized constant MR_COUNT
+&lt;main&gt;:4: warning: already initialized constant Foo::MR_COUNT
+&lt;main&gt;:2: warning: previous definition of MR_COUNT was here
+</pre>
+</div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>1
+2
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Precedencia-de-Operadores">Precedencia de Operadores<a class="anchor-link" href="#Precedencia-de-Operadores">&#182;</a></h2><table>
+<thead><tr>
+<th style="text-align:center">Method</th>
+<th style="text-align:center">Operator</th>
+<th style="text-align:center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center">::</td>
+<td style="text-align:center">Constant resolution operator</td>
+</tr>
+<tr>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center">[ ] [ ]=</td>
+<td style="text-align:center">Element reference, element set</td>
+</tr>
+<tr>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center">**</td>
+<td style="text-align:center">Exponentiation (raise to the power)</td>
+</tr>
+<tr>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center">! ~ + -</td>
+<td style="text-align:center">Not, complement, unary plus and minus (method names for the last two are +@ and -@)</td>
+</tr>
+<tr>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center">* / %</td>
+<td style="text-align:center">Multiply, divide, and modulo</td>
+</tr>
+<tr>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center">+ -</td>
+<td style="text-align:center">Addition and subtraction</td>
+</tr>
+<tr>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center">&gt;&gt; &lt;&lt;</td>
+<td style="text-align:center">Right and left bitwise shift</td>
+</tr>
+<tr>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center">&amp;</td>
+<td style="text-align:center">Bitwise 'AND'</td>
+</tr>
+<tr>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center">^ |</td>
+<td style="text-align:center">Bitwise exclusive <code>OR' and regular</code>OR'</td>
+</tr>
+<tr>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center">&lt;= &lt; &gt; &gt;=</td>
+<td style="text-align:center">Comparison operators</td>
+</tr>
+<tr>
+<td style="text-align:center">Yes</td>
+<td style="text-align:center">&lt;=&gt; == === != =~ !~</td>
+<td style="text-align:center">Equality and pattern match operators (!= and !~ may not be defined as methods)</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">&amp;&amp;</td>
+<td style="text-align:center">Logical 'AND'</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">||</td>
+<td style="text-align:center">Logical 'OR'</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">.. ...</td>
+<td style="text-align:center">Range (inclusive and exclusive)</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">? :</td>
+<td style="text-align:center">Ternary if-then-else</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">= %= { /= -= += |= &amp;= &gt;&gt;= &lt;&lt;= <em>= &amp;&amp;= ||= \</em>*=</td>
+<td style="text-align:center">Assignment</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">defined?</td>
+<td style="text-align:center">Check if specified symbol defined</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">not</td>
+<td style="text-align:center">Logical negation</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">or and</td>
+<td style="text-align:center">Logical composition</td>
+</tr>
+</tbody>
+</table>
+
+</div>
 </div>
 </body>
 

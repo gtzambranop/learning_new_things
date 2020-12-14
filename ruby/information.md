@@ -12,8 +12,9 @@
 - [Tutorial - Ruby](https://www.tutorialspoint.com/ruby/index.htm)
 
 
-## Contenido
+## Conceptos Básicos
 
 | Notebook  | Descripción |
 | :---: | :---: |
-| [Operadores](jupyter/operators.html) | Aritméticos, Comparación |
+| [Operadores](jupyter/operators.html) | Aritméticos, Asignación, Comparación, Bit-Bit, Lógicos... |
+| Clases y Objetos |  |
