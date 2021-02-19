@@ -14601,6 +14601,252 @@ b &gt;&gt; 1 =  10  = 010
 </div>
 
 </div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Operadores-de-Asignaci&#243;n">Operadores de Asignaci&#243;n<a class="anchor-link" href="#Operadores-de-Asignaci&#243;n">&#182;</a></h2><table>
+<thead><tr>
+<th style="text-align:center">Operador</th>
+<th style="text-align:center">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">\=</td>
+<td style="text-align:center">Asignación simple</td>
+</tr>
+<tr>
+<td style="text-align:center">+\=</td>
+<td style="text-align:center">Agregar y asignar</td>
+</tr>
+<tr>
+<td style="text-align:center">-\=</td>
+<td style="text-align:center">Restar y asignar</td>
+</tr>
+<tr>
+<td style="text-align:center">*\=</td>
+<td style="text-align:center">Multiplicar y asignar</td>
+</tr>
+<tr>
+<td style="text-align:center">\/\=</td>
+<td style="text-align:center">Dividir y asignar</td>
+</tr>
+<tr>
+<td style="text-align:center">\%\=</td>
+<td style="text-align:center">Módulo y asignación</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-javascript"><pre><span></span><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mf">20</span><span class="p">,</span> <span class="nx">b</span> <span class="o">=</span> <span class="mf">33</span><span class="p">,</span> <span class="nx">result</span><span class="p">;</span>
+<span class="nx">result</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span> <span class="o">=</span> <span class="nx">b</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;(a = b) =&gt; a = &quot;</span><span class="p">,</span> <span class="nx">result</span><span class="p">);</span>
+<span class="nx">a</span> <span class="o">+=</span> <span class="nx">b</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;(a += b) =&gt; a = &quot;</span><span class="p">,</span> <span class="nx">a</span><span class="p">);</span>
+<span class="nx">a</span> <span class="o">-=</span> <span class="nx">b</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;(a -= b) =&gt; a = &quot;</span><span class="p">,</span> <span class="nx">a</span><span class="p">);</span>
+<span class="nx">a</span> <span class="o">*=</span> <span class="nx">b</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;(a *= b) =&gt; a = &quot;</span><span class="p">,</span> <span class="nx">a</span><span class="p">);</span>
+<span class="nx">a</span> <span class="o">/=</span> <span class="nx">b</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;(a /= b) =&gt; a = &quot;</span><span class="p">,</span> <span class="nx">a</span><span class="p">);</span>
+<span class="nx">b</span> <span class="o">%=</span> <span class="mf">2</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;(b %= 2) =&gt; b = &quot;</span><span class="p">,</span> <span class="nx">b</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>(a = b) =&gt; a =  <span class="ansi-yellow-fg">33</span>
+(a += b) =&gt; a =  <span class="ansi-yellow-fg">66</span>
+(a -= b) =&gt; a =  <span class="ansi-yellow-fg">33</span>
+(a *= b) =&gt; a =  <span class="ansi-yellow-fg">1089</span>
+(a /= b) =&gt; a =  <span class="ansi-yellow-fg">33</span>
+(b %= 2) =&gt; b =  <span class="ansi-yellow-fg">1</span>
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Operador-Miscel&#225;neo">Operador Miscel&#225;neo<a class="anchor-link" href="#Operador-Miscel&#225;neo">&#182;</a></h2><h3 id="Operador-condicional">Operador condicional<a class="anchor-link" href="#Operador-condicional">&#182;</a></h3><p>Evalúa una expresión para un valor verdadero o falso y luego ejecut una de las dos declaraciones dadas, dependiendo del resultado de la evaluación.</p>
+<table>
+<thead><tr>
+<th style="text-align:center">Operación</th>
+<th style="text-align:center">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">?:(Conditional)</td>
+<td style="text-align:center">If Condition is true <strong>?</strong> Then value X <strong>:</strong> Otherwise value Y</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-javascript"><pre><span></span><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mf">5</span><span class="p">,</span> <span class="nx">b</span> <span class="o">=</span> <span class="mf">2</span><span class="p">,</span> <span class="nx">c</span><span class="p">;</span>
+
+<span class="nx">c</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span> <span class="o">&lt;</span> <span class="nx">b</span><span class="p">)</span> <span class="o">?</span> <span class="s2">&quot;a es menor que b&quot;</span> <span class="o">:</span> <span class="s2">&quot;a es mayor o igual a b&quot;</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">c</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>a es mayor o igual a b
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Operador-typeof">Operador typeof<a class="anchor-link" href="#Operador-typeof">&#182;</a></h3><p>Es un operador unario que se coloca antes de su operando único, que puede ser de cualquier tipo. Retorna una cadena que indica el tipo de dato del operando.</p>
+<table>
+<thead><tr>
+<th style="text-align:center">Entrada</th>
+<th style="text-align:center">Retorno</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Number</td>
+<td style="text-align:center">"number"</td>
+</tr>
+<tr>
+<td style="text-align:center">String</td>
+<td style="text-align:center">"string"</td>
+</tr>
+<tr>
+<td style="text-align:center">Boolean</td>
+<td style="text-align:center">"boolean"</td>
+</tr>
+<tr>
+<td style="text-align:center">Object</td>
+<td style="text-align:center">"object"</td>
+</tr>
+<tr>
+<td style="text-align:center">Function</td>
+<td style="text-align:center">"function"</td>
+</tr>
+<tr>
+<td style="text-align:center">Undefined</td>
+<td style="text-align:center">"undefined"</td>
+</tr>
+<tr>
+<td style="text-align:center">Null</td>
+<td style="text-align:center">"object"</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-javascript"><pre><span></span><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mf">2</span><span class="p">,</span> <span class="nx">b</span> <span class="o">=</span> <span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="nx">result</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nx">fun</span><span class="p">(</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">y</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">x</span> <span class="o">==</span> <span class="nx">y</span><span class="p">)</span> <span class="o">?</span> <span class="nx">x</span> <span class="o">+</span> <span class="s2">&quot; is &quot;</span> <span class="o">+</span> <span class="nx">y</span> <span class="o">:</span> <span class="nx">x</span> <span class="o">+</span> <span class="s2">&quot; is not &quot;</span> <span class="o">+</span> <span class="nx">y</span> <span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">result</span> <span class="o">=</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">b</span> <span class="o">==</span> <span class="s2">&quot;string&quot;</span><span class="p">)</span> <span class="o">?</span> <span class="s2">&quot;b is String&quot;</span> <span class="o">:</span> <span class="s2">&quot;b is not String&quot;</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+<span class="nx">result</span> <span class="o">=</span> <span class="nx">fun</span><span class="p">(</span><span class="nx">b</span><span class="p">,</span> <span class="s2">&quot;string&quot;</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+<span class="nx">result</span> <span class="o">=</span> <span class="nx">fun</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="s2">&quot;number&quot;</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+<span class="nx">result</span> <span class="o">=</span> <span class="nx">fun</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="s2">&quot;object&quot;</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+<span class="nx">result</span> <span class="o">=</span> <span class="nx">fun</span><span class="p">(</span><span class="nx">fun</span><span class="p">,</span> <span class="s2">&quot;function&quot;</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>b is String
+Hello is string
+2 is number
+2 is not object
+function fun(x, y) {
+    return (typeof x == y) ? x + &#34; is &#34; + y : x + &#34; is not &#34; + y;
+} is function
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
 </body>
 
 
