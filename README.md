@@ -4,5 +4,13 @@
 
 | Languages  | Start date  |
 | :---: | :---: |
-| [Ruby](ruby/information.md) | 11-12-2020 |
-| [Javascript](javascript/information.md) | 09-02-2021 |
+| [Ruby](ruby/information.md) | 2020-12-11 |
+| [Javascript](javascript/information.md) | 2021-02-09 |
+
+## Tools
+
+## Others
+
+| Name | Start date |
+| :---: | :---: |
+| [English](english/information.md) | 2021-02-22 |
