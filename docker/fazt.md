@@ -124,8 +124,10 @@
   ```bash
   docker build -t name_image .
   ```
+- Copiar archivos del contenedor a una ruta local
 
   ```bash
+	docker cp <containerId>:/file/path/in/container/file /host/local/path/file
   ```
 
   ```bash
