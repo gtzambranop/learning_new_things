@@ -16,5 +16,6 @@
 
 | Notebook  | Descripción |
 | :---: | :---: |
-| [Operadores](jupyter/operators.html) | Aritméticos, Asignación, Comparación, Bit-Bit, Lógicos... |
-| Clases y Objetos |  |
+| [Operadores](htmls/operators.html) | Aritméticos, Asignación, Comparación, Bit-Bit, Lógicos... |
+| [Comentarios](htmls/comments.html) | De una y múltiples líneas |
+| [Control de flujo](htmls/flow_controllers.html) | if..else, unless, case |
