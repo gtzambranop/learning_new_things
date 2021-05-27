@@ -28,3 +28,4 @@
   - Componentes
     - Instancias
 - Drafts: borradores de los proyectos
+- [View layers, pages and components (left sidebar)](https://help.figma.com/hc/en-us/articles/360039831974)

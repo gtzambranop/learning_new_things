@@ -38,5 +38,3 @@ Si eres un estudiante o profesor, puedes calificar para un plan de Figma Educati
 Los equipos en el plan de Education permiten acceso a todas las funcionalidades del plan Professional de manera gratuita, a la vez que también se accede a comunidades y recursos para las aulas de clase.
 
 Los planes de Education son válidos por hasta 2 años consecutivos. Si todavía eres estudiante o profesor luego de esos dos años, puedes volver a aplicar para reactivar tu status de Education.
-
-[View layers, pages and components (left sidebar)](https://help.figma.com/hc/en-us/articles/360039831974)
