@@ -9,6 +9,10 @@
 
 ## Tools
 
+| Tool | Start date |
+| :---: | :---: |
+| [Figma](figma/information.md) | |
+
 ## Others
 
 | Name | Start date |
