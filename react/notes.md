@@ -1,3 +1,46 @@
+- [React.js](#reactjs)
+  - [Introducción](#introducción)
+    - [¡Qué es?](#qué-es)
+    - [Pre-requisitos](#pre-requisitos)
+    - [Herramientas que usaremos](#herramientas-que-usaremos)
+    - [Create-react-app](#create-react-app)
+  - [Fundamentos](#fundamentos)
+    - [Clonar el código de GitHub](#clonar-el-código-de-github)
+    - [ReactDOM.render](#reactdomrender)
+    - [JSX](#jsx)
+  - [Creación y Diseño de Componentes](#creación-y-diseño-de-componentes)
+    - [¿Qué es un componente?](#qué-es-un-componente)
+    - [Qué es y cómo funciona un componente en React.js](#qué-es-y-cómo-funciona-un-componente-en-reactjs)
+    - [Nuestro primer componente](#nuestro-primer-componente)
+    - [Cómo aplicar estilos](#cómo-aplicar-estilos)
+    - [Props](#props)
+    - [Nuestra primera página](#nuestra-primera-página)
+    - [Enlazando eventos](#enlazando-eventos)
+    - [Manejo de Estado](#manejo-de-estado)
+    - [Levantamiento del estado](#levantamiento-del-estado)
+    - [Listas de componentes](#listas-de-componentes)
+  - [React Router](#react-router)
+    - [Introducción a React Router](#introducción-a-react-router)
+    - [División de la aplicación en rutas](#división-de-la-aplicación-en-rutas)
+    - [Mejorando la User Interface con un Layout](#mejorando-la-user-interface-con-un-layout)
+  - [Component Lifecycle](#component-lifecycle)
+    - [Práctica del ciclo de vida](#práctica-del-ciclo-de-vida)
+  - [Llamadas a un API](#llamadas-a-un-api)
+    - [Introducción llamadas a un API](#introducción-llamadas-a-un-api)
+    - [React.js: Cómo traer datos de un API en React](#reactjs-cómo-traer-datos-de-un-api-en-react)
+    - [Solicitando datos (GET)](#solicitando-datos-get)
+    - [Mejorando la Experiencia de Usuario durante una petición](#mejorando-la-experiencia-de-usuario-durante-una-petición)
+    - [Enviando datos (POST)](#enviando-datos-post)
+    - [Manejando los estados de la petición durante el POST](#manejando-los-estados-de-la-petición-durante-el-post)
+    - [Actualizando datos (PUT)](#actualizando-datos-put)
+    - [Actualizaciones automáticas](#actualizaciones-automáticas)
+  - [Mejorando la UI](#mejorando-la-ui)
+    - [Los detalles de un Badge](#los-detalles-de-un-badge)
+    - [Portales](#portales)
+    - [Modales](#modales)
+    - [Hooks](#hooks)
+    - [Search Filter](#search-filter)
+
 # React.js
 
 ## Introducción
@@ -82,7 +125,7 @@ Otras herramientas:
 
 ### ReactDOM.render
 
-- `documnet.createElement()` es una herramienta que ya viene en el navegador y necesita como argumento el objetoq ue se desea crear.
+- `documnet.createElement()` es una herramienta que ya viene en el navegador y necesita como argumento el objeto que se desea crear.
 
   ![](images/00.PNG)
 
@@ -161,9 +204,9 @@ Para identificarlos debes hacerte las siguientes preguntas:
 ### Qué es y cómo funciona un componente en React.js
 
 El ciclo de vida de los componentes tiene 3 fases :
-- El Montaje es cuando los usuarios llegan a nuestra aplicación, cuando tienen su 1era interacción con él.
-- La Actualización , es cuando se ejecuta el render, generando el nuevo DOM, es cuando React manda una señal de actualización `componentDidUpdate()`.
-- Eliminación de los componentes, al entrar a otra página, varios componentes no estarán en ella, React manda la señal `componentWIllUnmount()`, seguido de la eliminación del código en el DOM.
+- **El Montaje:** es cuando los usuarios llegan a nuestra aplicación, cuando tienen su 1era interacción con él.
+- **La Actualización:** es cuando se ejecuta el render, generando el nuevo DOM, es cuando React manda una señal de actualización `componentDidUpdate()`.
+- **Eliminación de los componentes:** al entrar a otra página, varios componentes no estarán en ella, React manda la señal `componentWIllUnmount()`, seguido de la eliminación del código en el DOM.
 
 ### Nuestro primer componente
 
@@ -394,7 +437,7 @@ Las aplicaciones que se trabajan en React son llamadas single page apps. Esto es
 
   ![](images/30.PNG)
 
-- Route: Representa una dirección, sus propiedades principales son el `path` (donde se renderizará) y `component` (quñe es lo que se renderizará)
+- Route: Representa una dirección, sus propiedades principales son el `path` (donde se renderizará) y `component` (que es lo que se renderizará)
   - Cuando hay un match con el path, se hace render del component.
   - El component va a recibir tres props: match, history, location.
 - Switch: Dentro de Switch solamente van elementos de Route. Switch se asegura que solamente un Route se renderize.
@@ -628,7 +671,7 @@ Existe un tiempo entre que se da clic y los datos son enviados. Ese tiempo de es
 
   ![](images/4E.PNG)
 
-- La idea es mostrar los errores en el componente hijo, para ello hay que pasarle estos cuando lo llamamos utilizando susu `props`
+- La idea es mostrar los errores en el componente hijo, para ello hay que pasarle estos cuando lo llamamos utilizando sus `props`
 
   ![](images/51.PNG)
 

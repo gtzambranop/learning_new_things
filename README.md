@@ -12,3 +12,4 @@
 | [JavaScript Básico](basic-javascript/notes.md) | 2021-06-28 |
 | [JavaScript Profesiona](profesional-javascript/notes.md) | 2021-06-29 |
 | [React](react/notes.md) | 2021-07-01 |
+| [Redux](redux/notes.md) | 2021-07-22 |
