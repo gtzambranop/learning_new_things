@@ -1,11 +1,9 @@
-// memo: sirve para memorizar un componente en base a sus properties
-// si las properties son iguales, el componente no se renderiza
 import React, { memo, useEffect } from 'react';
 import Item from './Item';
 
 const List = ({ users }) => {
   useEffect(() => {
-    console.log('List render');
+    //console.log('List render');
   });
   return (
     <ul>
@@ -16,4 +14,4 @@ const List = ({ users }) => {
   );
 };
 
-export default List;
+export default memo(List);

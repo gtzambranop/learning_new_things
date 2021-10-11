@@ -18,3 +18,10 @@ def sort_numbers(request):
     'message': 'Integers sorted successfully.'
   }
   return HttpResponse(json.dumps(result, indent=2), content_type='application/json')
+
+def say_hi(request, name, age):
+  if age < 12:
+    message = 'Sorry {}, you are not allowed here'.format(name)
+  else:
+    message = 'Hello {}!'.format(name)
+  return HttpResponse(message)

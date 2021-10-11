@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, memo } from 'react';
 
 const Item = ({ user }) => {
   useEffect(() => {
-    console.log('Item Render');
+    //console.log('Item Render ' + user.name);
   });
-  return <li>{user.name}</li>;
+  return <li key={user.id}>{user.name}</li>;
 };
 
-export default Item;
+export default memo(Item);
