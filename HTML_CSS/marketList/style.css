@@ -1,0 +1,19 @@
+img {
+  height: 250px;
+}
+
+body {
+  background-color: lavenderblush;
+}
+
+h1 {
+  color: indigo;
+}
+
+li {
+  color: indianred;
+}
+
+.big-item {
+  color: rebeccapurple;
+}

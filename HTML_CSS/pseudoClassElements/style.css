@@ -1,0 +1,31 @@
+.main-nav {
+  margin-top: 10px;
+  /* Eliminar puntos de los items de la lista */
+  list-style: none;
+  padding-left: 0;
+  background-color: aquamarine;
+}
+
+.main-nav__item {
+  /* Elementos desplegados horizontalmente */
+  display: inline-block;
+}
+
+.main-nav__item a {
+  color: dodgerblue;
+  padding: 5px;
+  /* Eliminar el subrayado del texto */
+  text-decoration: none;
+}
+
+.main-nav__item a:hover {
+  color: wheat;
+}
+
+.main-nav__item a:active {
+  color: blue;
+}
+
+.main-nav__item a::after {
+  content: " |";
+}
